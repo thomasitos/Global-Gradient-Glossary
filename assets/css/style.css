@@ -1,0 +1,196 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General body styling */
+body {
+  font-family: Helvetica, sans-serif;
+  background: black;
+  color: white;
+  height: 100vh; /* Ensure the body fits the screen height */
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+/* Headings */
+h1 {
+  font-family: CooperHewittHeavy;
+  line-height: 58px;
+  text-align: left;
+  font-size: 60px;
+}
+
+h2 {
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.title{
+
+}
+
+/* Grid container */
+.grid-container {
+  display: grid;
+  grid-template-columns: 400px;
+  grid-auto-flow: column; /* Columns grow horizontally */
+  grid-auto-columns: minmax(100px, 1fr); /* Flexible column widths */
+  height: 100vh; /* Adjust for footer height */
+  background-color: #f4f4f4;
+  gap: 0; /* No spacing between columns */
+  overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+/* Footer styling */
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  position: fixed; /* Ensure the footer is fixed */
+  bottom: 0;
+  background-color: black;
+  width: 400px;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Gradient items */
+.gradient {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gradient:hover {
+  border: 6px white solid;
+
+}
+
+.btnControl {
+  display: none;
+}
+
+
+.gradient:has(.btnControl:checked) {
+border: 6px white solid;
+}
+
+.gradient1 {
+  background-image: linear-gradient(green, yellow, red, purple, blue, black);
+}
+
+.gradient2 {
+  background-image: linear-gradient(white, yellow, green);
+}
+
+.gradient3 {
+  background-image: linear-gradient(white, red, indigo);
+}
+
+.image {
+  width: 100%;
+}
+
+.content1 {
+  display: none;
+}
+
+.content2 {
+  display: none;
+}
+
+.content3 {
+  display: none;
+}
+
+
+.grid-container:has(.test1:checked) ~ .footer .content1 {
+  display: block;}
+
+.grid-container:has(.test2:checked) ~ .footer .content2 {
+  display: block;}
+
+.grid-container:has(.test3:checked) ~ .footer .content3 {
+  display: block;}
+
+
+.grid-container:has(.test4:checked) ~ .footer .content1 {
+  display: block;}
+
+.grid-container:has(.test5:checked) ~ .footer .content2 {
+  display: block;}
+
+.grid-container:has(.test6:checked) ~ .footer .content3 {
+  display: block;}
+
+
+.grid-container:has(.test7:checked) ~ .footer .content1 {
+  display: block;}
+
+.grid-container:has(.test8:checked) ~ .footer .content2 {
+  display: block;}
+
+.grid-container:has(.test9:checked) ~ .footer .content3 {
+  display: block;}
+
+
+.grid-container:has(.test10:checked) ~ .footer .content1 {
+  display: block;}
+
+.grid-container:has(.test11:checked) ~ .footer .content2 {
+  display: block;}
+
+.grid-container:has(.test12:checked) ~ .footer .content3 {
+  display: block;}
+
+  .grid-container:has(.test13:checked) ~ .footer .content1 {
+  display: block;}
+
+.grid-container:has(.test14:checked) ~ .footer .content2 {
+  display: block;}
+
+.grid-container:has(.test15:checked) ~ .footer .content3 {
+  display: block;}
+
+
+.grid-container:has(.test16:checked) ~ .footer .content1 {
+  display: block;}
+
+.grid-container:has(.test17:checked) ~ .footer .content2 {
+  display: block;}
+
+.grid-container:has(.test18:checked) ~ .footer .content3 {
+  display: block;}
+
+
+.grid-container:has(.test19:checked) ~ .footer .content1 {
+  display: block;}
+
+.grid-container:has(.test20:checked) ~ .footer .content2 {
+  display: block;}
+
+.grid-container:has(.test21:checked) ~ .footer .content3 {
+  display: block;}
+
+
+.grid-container:has(.test22:checked) ~ .footer .content1 {
+  display: block;}
+
+.grid-container:has(.test23:checked) ~ .footer .content2 {
+  display: block;}
+
+.grid-container:has(.test24:checked) ~ .footer .content3 {
+  display: block;}
+
+
