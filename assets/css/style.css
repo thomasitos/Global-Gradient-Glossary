@@ -12,7 +12,7 @@ body {
   color: white;
   height: 100vh; /* Ensure the body fits the screen height */
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: left;
   width: 100%;
   justify-content: flex-start;
@@ -21,31 +21,83 @@ body {
 /* Headings */
 h1 {
   font-family: CooperHewittHeavy;
-  line-height: 58px;
+  line-height: 48px;
   text-align: left;
-  font-size: 60px;
+  font-size: 52px;
 }
 
 h2 {
   font-family: Helvetica, sans-serif;
   font-size: 18px;
-  font-weight: 100;
+  font-weight: 600;
 }
 
-.title{
+.wrapper {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  width: 100%;
+}
+
+.title {
+
+}
+
+.blocker {
+  display: block;
+  padding-left: 400px;
 
 }
 
 /* Grid container */
 .grid-container {
   display: grid;
-  grid-template-columns: 400px;
   grid-auto-flow: column; /* Columns grow horizontally */
   grid-auto-columns: minmax(100px, 1fr); /* Flexible column widths */
-  height: 100vh; /* Adjust for footer height */
+  height: 97vh; /* Adjust for footer height */
   background-color: #f4f4f4;
   gap: 0; /* No spacing between columns */
-  overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+.grid-container-2{
+  display: grid;
+  grid-auto-flow: column; /* Columns grow horizontally */
+  grid-auto-columns: minmax(100px, 1fr); /* Flexible column widths */
+  height: 96.5vh; /* Adjust for footer height */
+  background-color: #f4f4f4;
+  gap: 0; /* No spacing between columns */
+}
+
+.grid-container-3{
+  display: grid;
+  grid-auto-flow: column; /* Columns grow horizontally */
+  grid-auto-columns: minmax(100px, 1fr); /* Flexible column widths */
+  height: 96vh; /* Adjust for footer height */
+  background-color: #f4f4f4;
+  gap: 0; /* No spacing between columns */
+}
+
+.library {
+  background: white;
+  color: black;
+  padding-left: 10px;
+  padding-top: 5px;
+  height: 3vh;
+}
+
+.library-2 {
+  background: white;
+  color: black;
+  padding-left: 10px;
+  padding-top: 5px;
+  height: 3.5vh;
+}
+
+.library-3 {
+  background: white;
+  color: black;
+  padding-left: 10px;
+  padding-top: 5px;
+  height: 4vh;
 }
 
 /* Footer styling */
@@ -115,82 +167,28 @@ border: 6px white solid;
 }
 
 
-.grid-container:has(.test1:checked) ~ .footer .content1 {
+.wrapper:has(.test1:checked) ~ .footer .content1 {
   display: block;}
 
-.grid-container:has(.test2:checked) ~ .footer .content2 {
+.wrapper:has(.test2:checked) ~ .footer .content2 {
   display: block;}
 
-.grid-container:has(.test3:checked) ~ .footer .content3 {
+.wrapper:has(.test3:checked) ~ .footer .content3 {
   display: block;}
 
+.wrapper:has(.test1:checked) ~ .footer {
+  color: blueviolet;}
 
-.grid-container:has(.test4:checked) ~ .footer .content1 {
-  display: block;}
+.wrapper:has(.test2:checked) ~ .footer {
+  color: yellowgreen;}
 
-.grid-container:has(.test5:checked) ~ .footer .content2 {
-  display: block;}
-
-.grid-container:has(.test6:checked) ~ .footer .content3 {
-  display: block;}
-
-
-.grid-container:has(.test7:checked) ~ .footer .content1 {
-  display: block;}
-
-.grid-container:has(.test8:checked) ~ .footer .content2 {
-  display: block;}
-
-.grid-container:has(.test9:checked) ~ .footer .content3 {
-  display: block;}
+.wrapper:has(.test3:checked) ~ .footer {
+  color: red;}
 
 
-.grid-container:has(.test10:checked) ~ .footer .content1 {
-  display: block;}
-
-.grid-container:has(.test11:checked) ~ .footer .content2 {
-  display: block;}
-
-.grid-container:has(.test12:checked) ~ .footer .content3 {
-  display: block;}
-
-  .grid-container:has(.test13:checked) ~ .footer .content1 {
-  display: block;}
-
-.grid-container:has(.test14:checked) ~ .footer .content2 {
-  display: block;}
-
-.grid-container:has(.test15:checked) ~ .footer .content3 {
-  display: block;}
 
 
-.grid-container:has(.test16:checked) ~ .footer .content1 {
-  display: block;}
-
-.grid-container:has(.test17:checked) ~ .footer .content2 {
-  display: block;}
-
-.grid-container:has(.test18:checked) ~ .footer .content3 {
-  display: block;}
 
 
-.grid-container:has(.test19:checked) ~ .footer .content1 {
-  display: block;}
-
-.grid-container:has(.test20:checked) ~ .footer .content2 {
-  display: block;}
-
-.grid-container:has(.test21:checked) ~ .footer .content3 {
-  display: block;}
-
-
-.grid-container:has(.test22:checked) ~ .footer .content1 {
-  display: block;}
-
-.grid-container:has(.test23:checked) ~ .footer .content2 {
-  display: block;}
-
-.grid-container:has(.test24:checked) ~ .footer .content3 {
-  display: block;}
 
 
