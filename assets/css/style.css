@@ -35,7 +35,7 @@ h2 {
 
 .wrapper {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr;
   width: 100%;
 }
 
@@ -54,6 +54,14 @@ a {
 
 }
 
+.blocker-3 {
+  display: block;
+  width: 5px;
+  background-color: white;
+  flex: none;
+
+}
+
 .blocker-2 {
   display: block;
   padding: 15px;
@@ -62,66 +70,19 @@ a {
 
 }
 
+
 /* Grid container */
 .grid-container {
   display: grid;
+  grid-template-columns: 5px;
   grid-auto-flow: column; /* Columns grow horizontally */
   grid-auto-columns: minmax(100px, 1fr); /* Flexible column widths */
-  height: 95vh; /* Adjust for footer height */
-  background-color: #f4f4f4;
+  height: 100vh; /* Adjust for footer height */
+  background-color: white;
   gap: 0; /* No spacing between columns */
 }
 
-.grid-container-2{
-  display: grid;
-  grid-auto-flow: column; /* Columns grow horizontally */
-  grid-auto-columns: minmax(100px, 1fr); /* Flexible column widths */
-  height: 94vh; /* Adjust for footer height */
-  background-color: #f4f4f4;
-  gap: 0; /* No spacing between columns */
-}
 
-.grid-container-3{
-  display: grid;
-  grid-auto-flow: column; /* Columns grow horizontally */
-  grid-auto-columns: minmax(100px, 1fr); /* Flexible column widths */
-  height: 93vh; /* Adjust for footer height */
-  background-color: #f4f4f4;
-  gap: 0; /* No spacing between columns */
-}
-
-.library {
-  display: flex;
-  font-family: FragmentMono;
-  font-size: 18px;
-  background: white;
-  color: black;
-  height: 5vh;
-  justify-content: center;
-  align-items: center;
-}
-
-.library-2 {
-  display: flex;
-  font-family: FragmentMono;
-  font-size: 18px;
-  background: white;
-  color: black;
-  height: 6vh;
-  justify-content: center;
-  align-items: center;
-}
-
-.library-3 {
-  display: flex;
-  font-family: FragmentMono;
-  font-size: 18px;
-  background: white;
-  color: black;
-  height: 7vh;
-  justify-content: center;
-  align-items: center;
-}
 
 /* Footer styling */
 .footer {
