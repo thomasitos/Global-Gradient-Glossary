@@ -14,8 +14,18 @@
 }
 
 @font-face {
+  font-family: FragmentMono;
+  src: url(../fonts/FragmentMono-Regular.ttf) format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
   font-family: CooperHewittBold;
   src: url(../fonts/CooperHewitt-Bold.otf) format("opentype");
   font-weight: 700;
   font-style: normal;
 }
+
+
+

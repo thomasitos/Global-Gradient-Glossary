@@ -28,9 +28,10 @@ h1 {
 
 h2 {
   font-family: Helvetica, sans-serif;
-  font-size: 18px;
+  font-size: 18 px;
   font-weight: 600;
 }
+
 
 .wrapper {
   display: grid;
@@ -42,9 +43,22 @@ h2 {
 
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .blocker {
   display: block;
   padding-left: 400px;
+
+}
+
+.blocker-2 {
+  display: block;
+  padding: 15px;
+  width: 200px;
+  flex: none;
 
 }
 
@@ -53,7 +67,7 @@ h2 {
   display: grid;
   grid-auto-flow: column; /* Columns grow horizontally */
   grid-auto-columns: minmax(100px, 1fr); /* Flexible column widths */
-  height: 97vh; /* Adjust for footer height */
+  height: 95vh; /* Adjust for footer height */
   background-color: #f4f4f4;
   gap: 0; /* No spacing between columns */
 }
@@ -62,7 +76,7 @@ h2 {
   display: grid;
   grid-auto-flow: column; /* Columns grow horizontally */
   grid-auto-columns: minmax(100px, 1fr); /* Flexible column widths */
-  height: 96.5vh; /* Adjust for footer height */
+  height: 94vh; /* Adjust for footer height */
   background-color: #f4f4f4;
   gap: 0; /* No spacing between columns */
 }
@@ -71,33 +85,42 @@ h2 {
   display: grid;
   grid-auto-flow: column; /* Columns grow horizontally */
   grid-auto-columns: minmax(100px, 1fr); /* Flexible column widths */
-  height: 96vh; /* Adjust for footer height */
+  height: 93vh; /* Adjust for footer height */
   background-color: #f4f4f4;
   gap: 0; /* No spacing between columns */
 }
 
 .library {
+  display: flex;
+  font-family: FragmentMono;
+  font-size: 18px;
   background: white;
   color: black;
-  padding-left: 10px;
-  padding-top: 5px;
-  height: 3vh;
+  height: 5vh;
+  justify-content: center;
+  align-items: center;
 }
 
 .library-2 {
+  display: flex;
+  font-family: FragmentMono;
+  font-size: 18px;
   background: white;
   color: black;
-  padding-left: 10px;
-  padding-top: 5px;
-  height: 3.5vh;
+  height: 6vh;
+  justify-content: center;
+  align-items: center;
 }
 
 .library-3 {
+  display: flex;
+  font-family: FragmentMono;
+  font-size: 18px;
   background: white;
   color: black;
-  padding-left: 10px;
-  padding-top: 5px;
-  height: 4vh;
+  height: 7vh;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Footer styling */
@@ -125,7 +148,7 @@ h2 {
 }
 
 .gradient:hover {
-  border: 6px white solid;
+  border: 5px white solid;
 
 }
 
@@ -135,7 +158,7 @@ h2 {
 
 
 .gradient:has(.btnControl:checked) {
-border: 6px white solid;
+border: 5px white solid;
 }
 
 .gradient1 {
@@ -143,11 +166,11 @@ border: 6px white solid;
 }
 
 .gradient2 {
-  background-image: linear-gradient(white, yellow, green);
+  background-image: linear-gradient(green, yellow, white);
 }
 
 .gradient3 {
-  background-image: linear-gradient(white, red, indigo);
+  background-image: linear-gradient(indigo, red, white);
 }
 
 .image {
@@ -155,14 +178,23 @@ border: 6px white solid;
 }
 
 .content1 {
+  font-family: FragmentMono;
+  font-size: 18px;
+  line-height: 20px;
   display: none;
 }
 
 .content2 {
+  font-family: FragmentMono;
+  font-size: 18px;
+  line-height: 20px;
   display: none;
 }
 
 .content3 {
+  font-family: FragmentMono;
+  font-size: 18px;
+  line-height: 20px;
   display: none;
 }
 
