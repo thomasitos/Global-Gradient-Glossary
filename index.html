@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+	<title>Gradient</title>
+
+
+
+<!-- Hier im Header werden Content und Verlauf verknüpft. Wenn ein Verlauf ausgewählt wird, das Content mit der entsprechenden ID gezeigt (display:none->block) und die Farbe der Schrift geändert -->
+
+
+<style>
+
+.wrapper:has(#gradient-1:checked) ~ .footer #content-1 {
+  display: block;}
+
+/*.wrapper:has(#gradient-1:checked) ~ .footer {
+    color: pink;}*/
+
+#animation-1 {
+    animation-duration: calc(15s + 10s * cos(1));
+}
+
+</style>
+
+<style>
+
+.wrapper:has(#gradient-2:checked) ~ .footer #content-2 {
+  display: block;}
+
+/*.wrapper:has(#gradient-2:checked) ~ .footer {
+    color: blue;}*/
+
+#animation-2 {
+    animation-duration: calc(15s + 10s * cos(2));
+}
+
+</style>
+
+<style>
+
+.wrapper:has(#gradient-3:checked) ~ .footer #content-3 {
+  display: block;}
+
+/*.wrapper:has(#gradient-3:checked) ~ .footer {
+    color: white;}*/
+
+#animation-3 {
+    animation-duration: calc(15s + 10s * cos(3));
+}
+
+</style>
+
+<style>
+
+.wrapper:has(#gradient-4:checked) ~ .footer #content-4 {
+  display: block;}
+
+/*.wrapper:has(#gradient-4:checked) ~ .footer {
+    color: pink;}*/
+
+#animation-4 {
+    animation-duration: calc(15s + 10s * cos(4));
+}
+
+</style>
+
+<style>
+
+.wrapper:has(#gradient-5:checked) ~ .footer #content-5 {
+  display: block;}
+
+/*.wrapper:has(#gradient-5:checked) ~ .footer {
+    color: pink;}*/
+
+#animation-5 {
+    animation-duration: calc(15s + 10s * cos(5));
+}
+
+</style>
+
+<style>
+
+.wrapper:has(#gradient-6:checked) ~ .footer #content-6 {
+  display: block;}
+
+/*.wrapper:has(#gradient-6:checked) ~ .footer {
+    color: pink;}*/
+
+#animation-6 {
+    animation-duration: calc(15s + 10s * cos(6));
+}
+
+</style>
+
+<style>
+
+.wrapper:has(#gradient-7:checked) ~ .footer #content-7 {
+  display: block;}
+
+/*.wrapper:has(#gradient-7:checked) ~ .footer {
+    color: pink;}*/
+
+#animation-7 {
+    animation-duration: calc(15s + 10s * cos(7));
+}
+
+</style>
+
+<style>
+
+.wrapper:has(#gradient-8:checked) ~ .footer #content-8 {
+  display: block;}
+
+/*.wrapper:has(#gradient-8:checked) ~ .footer {
+    color: pink;}*/
+
+#animation-8 {
+    animation-duration: calc(15s + 10s * cos(8));
+}
+
+</style>
+
+<style>
+
+.wrapper:has(#gradient-9:checked) ~ .footer #content-9 {
+  display: block;}
+
+/*.wrapper:has(#gradient-9:checked) ~ .footer {
+    color: pink;}*/
+
+#animation-9 {
+    animation-duration: calc(15s + 10s * cos(9));
+}
+
+</style>
+
+<style>
+
+.wrapper:has(#gradient-10:checked) ~ .footer #content-10 {
+  display: block;}
+
+/*.wrapper:has(#gradient-10:checked) ~ .footer {
+    color: pink;}*/
+
+#animation-10 {
+    animation-duration: calc(15s + 10s * cos(10));
+}
+
+</style>
+
+<style>
+
+.wrapper:has(#gradient-11:checked) ~ .footer #content-11 {
+  display: block;}
+
+/*.wrapper:has(#gradient-11:checked) ~ .footer {
+    color: pink;}*/
+
+#animation-11 {
+    animation-duration: calc(15s + 10s * cos(11));
+}
+
+</style>
+
+
+
+
+
+
+</head>
+
+
+<body>
+
+    <div class="blocker">
+        
+    </div>
+
+    <div class="wrapper">
+
+        <div class="grid-container">
+
+            <!-- Hier werden die Verläufe erstellt. Mit dem Style wird die Farbe definiert, mit der ID wird der Content verknüpft. Die Klasse btnContrlo dient dem Rand bei der Auswahl. Mit dem Namen werden alle Checkboxen eine Gruppe zugeordnet. -->
+
+            
+
+            <label class="gradient" id="animation-1" style="background-image:linear-gradient(in oklab, #49f14d, #e85c4a, #3643be, #4d1356, #000000, #000000, #4d1356, #3643be, #e85c4a, #49f14d),linear-gradient(90deg, #49f14d, #e85c4a, #3643be, #4d1356, #000000);background-size: 100% 200%; background-position: 0 0, 0 50%;">
+            <input type="checkbox" class="btnControl" id="gradient-1" name="button">
+            </label>             
+
+            
+
+            <label class="gradient" id="animation-2" style="background-image:linear-gradient(in oklab, #ffffff, #56c6f4, #000000, #000000, #56c6f4, #ffffff),linear-gradient(90deg, #49f14d, #e85c4a, #3643be, #4d1356, #000000);background-size: 100% 200%; background-position: 0 0, 0 50%;">
+            <input type="checkbox" class="btnControl" id="gradient-2" name="button">
+            </label>             
+
+            
+
+            <label class="gradient" id="animation-3" style="background-image:linear-gradient(in oklab, #000000, #464646, #dd1e1d, #b7b7b7, #6effff, #6effff, #b7b7b7, #dd1e1d, #464646, #000000),linear-gradient(90deg, #49f14d, #e85c4a, #3643be, #4d1356, #000000);background-size: 100% 200%; background-position: 0 0, 0 50%;">
+            <input type="checkbox" class="btnControl" id="gradient-3" name="button">
+            </label>             
+
+            
+
+            <label class="gradient" id="animation-4" style="background-image:linear-gradient(in oklab, #342413, #e6cca0, #e6cca0, #342413),linear-gradient(90deg, #49f14d, #e85c4a, #3643be, #4d1356, #000000);background-size: 100% 200%; background-position: 0 0, 0 50%;">
+            <input type="checkbox" class="btnControl" id="gradient-4" name="button">
+            </label>             
+
+            
+
+            <label class="gradient" id="animation-5" style="background-image:linear-gradient(in oklab, #cfac44, #f8eed0, #cfac44, #ffffff, #cfac44, #cfac44, #ffffff, #cfac44, #f8eed0, #cfac44),linear-gradient(90deg, #49f14d, #e85c4a, #3643be, #4d1356, #000000);background-size: 100% 200%; background-position: 0 0, 0 50%;">
+            <input type="checkbox" class="btnControl" id="gradient-5" name="button">
+            </label>             
+
+            
+
+            <label class="gradient" id="animation-6" style="background-image:linear-gradient(in oklab, #787878, #cfcfcf, #787878, #ffffff, #787878, #787878, #ffffff, #787878, #cfcfcf, #787878),linear-gradient(90deg, #49f14d, #e85c4a, #3643be, #4d1356, #000000);background-size: 100% 200%; background-position: 0 0, 0 50%;">
+            <input type="checkbox" class="btnControl" id="gradient-6" name="button">
+            </label>             
+
+            
+
+            <label class="gradient" id="animation-7" style="background-image:linear-gradient(in oklab, #de8321, #edcead, #de8321, #ffffff, #de8321, #de8321, #ffffff, #de8321, #edcead, #de8321),linear-gradient(90deg, #49f14d, #e85c4a, #3643be, #4d1356, #000000);background-size: 100% 200%; background-position: 0 0, 0 50%;">
+            <input type="checkbox" class="btnControl" id="gradient-7" name="button">
+            </label>             
+
+            
+
+            <label class="gradient" id="animation-8" style="background-image:linear-gradient(in oklab, #9de656, #e94693, #e9562f, #71afd2, #276486, #276486, #71afd2, #e9562f, #e94693, #9de656),linear-gradient(90deg, #49f14d, #e85c4a, #3643be, #4d1356, #000000);background-size: 100% 200%; background-position: 0 0, 0 50%;">
+            <input type="checkbox" class="btnControl" id="gradient-8" name="button">
+            </label>             
+
+            
+
+            <label class="gradient" id="animation-9" style="background-image:linear-gradient(in oklab, #852121, #4f59ba, #8acb5e, #e0d741, #e46b29, #e46b29, #e0d741, #8acb5e, #4f59ba, #852121),linear-gradient(90deg, #49f14d, #e85c4a, #3643be, #4d1356, #000000);background-size: 100% 200%; background-position: 0 0, 0 50%;">
+            <input type="checkbox" class="btnControl" id="gradient-9" name="button">
+            </label>             
+
+            
+
+            <label class="gradient" id="animation-10" style="background-image:linear-gradient(in oklab, #000000, #ef4897, #e4ad97, #f0d65b, #f0d65b, #e4ad97, #ef4897, #000000),linear-gradient(90deg, #49f14d, #e85c4a, #3643be, #4d1356, #000000);background-size: 100% 200%; background-position: 0 0, 0 50%;">
+            <input type="checkbox" class="btnControl" id="gradient-10" name="button">
+            </label>             
+
+            
+
+            <label class="gradient" id="animation-11" style="background-image:linear-gradient(in oklab, #000000, #58df47, #defcda, #defcda, #58df47, #000000),linear-gradient(90deg, #49f14d, #e85c4a, #3643be, #4d1356, #000000);background-size: 100% 200%; background-position: 0 0, 0 50%;">
+            <input type="checkbox" class="btnControl" id="gradient-11" name="button">
+            </label>             
+
+            
+
+        </div>
+
+    </div>
+
+    <div class="blocker-2">
+
+        <p>Hier kommen Informationen zum Projekt und eine Kontaktmöglichkeit zum hochladen :)</p>
+        
+    </div>
+
+
+
+    <div class="footer">
+
+        <!-- Hier im Footer wird der Content erstellt. Dabei wird jedem Content eine Individuelle ID zugewiesen. Zu dieser ID ist ein Verlauf und eine Farbe für die Schrift verknüpft -->
+
+        
+
+        <div class="content" id="content-1">
+            <img class=image src="assets/images/Thermal-Vision.jpg">
+            <div class="text">
+                <div>
+                <p>Thermal Vision</p>
+                </div>
+                <div class="right-bound">
+                <p><a href="assets/downloads/gradient1.grd">Download .grd</a></p>
+                <p><a href="assets/downloads/gradient1.grd">Download .ggr</a></p>
+                <details>
+                    <summary>Show CSS</summary>
+                    <p>linear-gradient(in oklab, #49f14d, #e85c4a, #3643be, #4d1356, #000000)</p>
+                </details>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="content" id="content-2">
+            <img class=image src="assets/images/X-Ray.jpg">
+            <div class="text">
+                <div>
+                <p>X-Ray</p>
+                </div>
+                <div class="right-bound">
+                <p><a href="assets/downloads/gradient1.grd">Download .grd</a></p>
+                <p><a href="assets/downloads/gradient1.grd">Download .ggr</a></p>
+                <details>
+                    <summary>Show CSS</summary>
+                    <p>linear-gradient(in oklab, #ffffff, #56c6f4, #000000)</p>
+                </details>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="content" id="content-3">
+            <img class=image src="assets/images/3D.jpg">
+            <div class="text">
+                <div>
+                <p>3D</p>
+                </div>
+                <div class="right-bound">
+                <p><a href="assets/downloads/gradient1.grd">Download .grd</a></p>
+                <p><a href="assets/downloads/gradient1.grd">Download .ggr</a></p>
+                <details>
+                    <summary>Show CSS</summary>
+                    <p>linear-gradient(in oklab, #000000, #464646, #dd1e1d, #b7b7b7, #6effff)</p>
+                </details>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="content" id="content-4">
+            <img class=image src="assets/images/Sepia.jpg">
+            <div class="text">
+                <div>
+                <p>Sepia</p>
+                </div>
+                <div class="right-bound">
+                <p><a href="assets/downloads/gradient1.grd">Download .grd</a></p>
+                <p><a href="assets/downloads/gradient1.grd">Download .ggr</a></p>
+                <details>
+                    <summary>Show CSS</summary>
+                    <p>linear-gradient(in oklab, #342413, #e6cca0)</p>
+                </details>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="content" id="content-5">
+            <img class=image src="assets/images/Gold.jpg">
+            <div class="text">
+                <div>
+                <p>Gold</p>
+                </div>
+                <div class="right-bound">
+                <p><a href="assets/downloads/gradient1.grd">Download .grd</a></p>
+                <p><a href="assets/downloads/gradient1.grd">Download .ggr</a></p>
+                <details>
+                    <summary>Show CSS</summary>
+                    <p>linear-gradient(in oklab, #cfac44, #f8eed0, #cfac44, #ffffff, #cfac44)</p>
+                </details>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="content" id="content-6">
+            <img class=image src="assets/images/Silver.jpg">
+            <div class="text">
+                <div>
+                <p>Silver</p>
+                </div>
+                <div class="right-bound">
+                <p><a href="assets/downloads/gradient1.grd">Download .grd</a></p>
+                <p><a href="assets/downloads/gradient1.grd">Download .ggr</a></p>
+                <details>
+                    <summary>Show CSS</summary>
+                    <p>linear-gradient(in oklab, #787878, #cfcfcf, #787878, #ffffff, #787878)</p>
+                </details>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="content" id="content-7">
+            <img class=image src="assets/images/Copper.jpg">
+            <div class="text">
+                <div>
+                <p>Copper</p>
+                </div>
+                <div class="right-bound">
+                <p><a href="assets/downloads/gradient1.grd">Download .grd</a></p>
+                <p><a href="assets/downloads/gradient1.grd">Download .ggr</a></p>
+                <details>
+                    <summary>Show CSS</summary>
+                    <p>linear-gradient(in oklab, #de8321, #edcead, #de8321, #ffffff, #de8321)</p>
+                </details>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="content" id="content-8">
+            <img class=image src="assets/images/Pop-Art_1.jpg">
+            <div class="text">
+                <div>
+                <p>Pop Art 1#</p>
+                </div>
+                <div class="right-bound">
+                <p><a href="assets/downloads/gradient1.grd">Download .grd</a></p>
+                <p><a href="assets/downloads/gradient1.grd">Download .ggr</a></p>
+                <details>
+                    <summary>Show CSS</summary>
+                    <p>linear-gradient(in oklab, #9de656, #e94693, #e9562f, #71afd2, #276486)</p>
+                </details>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="content" id="content-9">
+            <img class=image src="assets/images/Pop-Art_2.jpg">
+            <div class="text">
+                <div>
+                <p>Pop Art 2#</p>
+                </div>
+                <div class="right-bound">
+                <p><a href="assets/downloads/gradient1.grd">Download .grd</a></p>
+                <p><a href="assets/downloads/gradient1.grd">Download .ggr</a></p>
+                <details>
+                    <summary>Show CSS</summary>
+                    <p>linear-gradient(in oklab, #852121, #4f59ba, #8acb5e, #e0d741, #e46b29)</p>
+                </details>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="content" id="content-10">
+            <img class=image src="assets/images/Pop-Art_3.jpg">
+            <div class="text">
+                <div>
+                <p>Pop Art 3#</p>
+                </div>
+                <div class="right-bound">
+                <p><a href="assets/downloads/gradient1.grd">Download .grd</a></p>
+                <p><a href="assets/downloads/gradient1.grd">Download .ggr</a></p>
+                <details>
+                    <summary>Show CSS</summary>
+                    <p>linear-gradient(in oklab, #000000, #ef4897, #e4ad97, #f0d65b)</p>
+                </details>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="content" id="content-11">
+            <img class=image src="assets/images/Night-Vision.jpg">
+            <div class="text">
+                <div>
+                <p>Night Vision</p>
+                </div>
+                <div class="right-bound">
+                <p><a href="assets/downloads/gradient1.grd">Download .grd</a></p>
+                <p><a href="assets/downloads/gradient1.grd">Download .ggr</a></p>
+                <details>
+                    <summary>Show CSS</summary>
+                    <p>linear-gradient(in oklab, #000000, #58df47, #defcda)</p>
+                </details>
+                </div>
+            </div>
+        </div>
+
+                    
+
+
+        <div class="title">
+            <h1>GLOBAL GRADIENT GLOSSARY</h1>
+            <p>All the Gradients in the World.</p>
+            <p>The Whole World in Gradients.</p>
+        </div>
+    </div>
+</body>
+</html>

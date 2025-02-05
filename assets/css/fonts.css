@@ -1,0 +1,39 @@
+@font-face {
+  font-family: CompagnonLight;
+  src: url(../fonts/Compagnon-Light.woff) format("woff"),
+       url(../fonts/Compagnon-Light.woff2) format("woff2");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: CooperHewittHeavy;
+  src: url(../fonts/CooperHewitt-Heavy.otf) format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: CooperHewittBook;
+  src: url(../fonts/CooperHewitt-Book.otf) format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: FragmentMono;
+  src: url(../fonts/FragmentMono-Regular.ttf) format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: CooperHewittBold;
+  src: url(../fonts/CooperHewitt-Bold.otf) format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+
