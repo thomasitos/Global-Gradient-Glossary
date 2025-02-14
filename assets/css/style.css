@@ -7,15 +7,13 @@
 
 /* General body styling */
 body {
-  display: flex;
   font-family: CooperHewittBook;
-  font-size: 20px;
+  font-size: 22px;
   background: black;
   color: white;
   height: 100vh; /* Ensure the body fits the screen height */
   display: flex;
   flex-direction: row;
-  align-items: left;
   width: 100%;
   justify-content: flex-start;
 }
@@ -23,9 +21,9 @@ body {
 /* Headings */
 h1 {
   font-family: CooperHewittHeavy;
-  line-height: 48px;
+  line-height: 52px;
   text-align: left;
-  font-size: 52px;
+  font-size: 56px;
 }
 
 h2 {
@@ -42,8 +40,14 @@ h2 {
 }
 
 .title {
-  padding-top: 10px;
+  padding-top: 20px;
 
+}
+
+
+
+image:hover {
+  filter: none;
 }
 
 a {
@@ -58,12 +62,14 @@ a {
 }
 
 
-.blocker-2 {
+.footer {
   display: block;
+  padding-top: 20px;
   padding: 15px;
-  width: 200px;
+  width: 400px;
   flex: none;
   position: relative;
+  font-size: 16px;
 
 }
 
@@ -73,20 +79,19 @@ a {
   display: grid;
   grid-auto-flow: column; /* Columns grow horizontally */
   grid-auto-columns: minmax(100px, 1fr); /* Flexible column widths */
-  height: 100vh; /* Adjust for footer height */
+  height: 100vh; /* Adjust for header height */
   background-color: white;
   gap: 0; /* No spacing between columns */
 }
 
 
-
-/* Footer styling */
-.footer {
+/* Header styling */
+.header {
   padding-left: 15px;
   padding-right: 15px;
   padding-bottom: 20px;
   padding-top: 20px;
-  position: fixed; /* Ensure the footer is fixed */
+  position: fixed; /* Ensure the header is fixed */
   bottom: 0;
   background-color: black;
   width: 400px;
@@ -126,6 +131,13 @@ a {
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-duration: 5s !important;
+}
+
+.gradient:has(.btnControl:checked):hover {
+  animation-name: example;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 40s !important;
 }
 
 .gradient:has(.btnControl:checked):hover {
