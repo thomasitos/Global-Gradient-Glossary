@@ -129,7 +129,7 @@ a {
   animation-timing-function: linear;
   transform: scale(1.5, 1.0);
   transform-origin: center;
-  order: -1;
+  /*order: -1;*/
 
 
 }
@@ -231,8 +231,8 @@ a {
 
   .blocker {
       padding-left: 0px;
-      padding-top: 400px;
-      display: none;
+      padding-top: 50vh;
+      order: 300;
   }
 
   .gradient {
